@@ -8,7 +8,7 @@ const App = () => (
       <Route key={path} path={path} Component={Component} />
     ))}
     {protectedRoutes.map(({ path, Component }) => (
-      <Route key={path} path={path} Component={() => Component} />
+      <Route key={path} path={path} Component={Component} />
     ))}
   </Routes>
 );

@@ -19,6 +19,6 @@ export const openRoutes = [
 export const protectedRoutes = [
   {
     path: ROUTES.protected,
-    Component: ProtectedRoute({ component: ProtectedPage }),
+    Component: () => ProtectedRoute({ component: ProtectedPage }),
   },
 ];
